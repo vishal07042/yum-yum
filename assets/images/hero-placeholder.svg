@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Yum Yum hero placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2a1207"/>
+      <stop offset="60%" stop-color="#8b2f07"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <radialGradient id="plateGlow" cx="52%" cy="58%" r="42%">
+      <stop offset="0%" stop-color="#ffd4b0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd4b0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <ellipse cx="860" cy="530" rx="420" ry="240" fill="url(#plateGlow)"/>
+  <ellipse cx="910" cy="560" rx="320" ry="160" fill="#1a1a1a" fill-opacity="0.58"/>
+  <circle cx="770" cy="510" r="38" fill="#f97316"/>
+  <circle cx="865" cy="455" r="31" fill="#fb923c"/>
+  <circle cx="970" cy="530" r="34" fill="#fdba74"/>
+  <circle cx="1030" cy="470" r="24" fill="#f97316"/>
+  <circle cx="1085" cy="560" r="18" fill="#fb923c"/>
+  <path d="M 590 610 C 690 690, 1110 700, 1210 610" stroke="#111111" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <text x="92" y="152" fill="#fff6ee" font-size="64" font-family="Segoe UI, Arial, sans-serif" font-weight="700" letter-spacing="4">YUM YUM PLACEHOLDER</text>
+</svg>

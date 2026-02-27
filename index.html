@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yum Yum | Fresh Food Landing Page</title>
+  <meta name="description" content="Yum Yum food landing page built with HTML5, CSS3, and vanilla JavaScript." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top navigation -->
+  <header class="top-bar">
+    <a href="#home" class="logo" aria-label="Yum Yum home"><span class="logo-yum">Yum</span> Yum</a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#recipe">Recipe</a>
+    </nav>
+
+    <button class="signup-btn desktop-signup" type="button">Sign Up</button>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Left social/search sidebar -->
+  <aside class="sidebar" aria-label="Social links">
+    <button class="icon-btn" type="button" aria-label="Search">
+      <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+    </button>
+    <a href="#" class="icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+    <a href="#" class="icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    <a href="#" class="icon-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+    <a href="#" class="icon-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+  </aside>
+
+  <div class="mobile-menu-overlay" hidden></div>
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#recipe">Recipe</a>
+    <button class="signup-btn" type="button">Sign Up</button>
+  </nav>
+
+  <!-- Main one-page content -->
+  <main>
+    <section id="home" class="hero reveal">
+      <div class="hero-content">
+        <p class="hero-kicker">Fresh. Fast. Flavorful.</p>
+        <h1>Taste the Joy at <span>Yum Yum</span></h1>
+        <p class="hero-copy">
+          Explore chef-picked dishes, balanced recipes, and meal ideas that make every table feel special.
+        </p>
+        <div class="hero-actions">
+          <a href="#recipe" class="btn btn-solid">Explore Recipes</a>
+          <a href="#about" class="btn btn-outline">Why Yum Yum</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">About Us</p>
+        <h2>Food stories built around taste and simplicity.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            Yum Yum helps busy food lovers cook better at home with clear instructions, seasonal ingredients,
+            and nutrition-conscious choices that never compromise flavor.
+          </p>
+          <p>
+            From quick weekday bowls to weekend celebration platters, every collection is tested in a real
+            kitchen, optimized for time, and styled to impress.
+          </p>
+          <div class="stats-grid">
+            <article>
+              <h3>120+</h3>
+              <p>weekly recipe ideas</p>
+            </article>
+            <article>
+              <h3>25 min</h3>
+              <p>average prep time</p>
+            </article>
+            <article>
+              <h3>98%</h3>
+              <p>reader satisfaction</p>
+            </article>
+          </div>
+        </div>
+        <img src="assets/images/about-table.jpg" alt="Food dishes on a dark table" loading="lazy" />
+      </div>
+    </section>
+
+    <section id="recipe" class="recipes section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Top Recipes</p>
+        <h2>Trending favorites this week.</h2>
+      </div>
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <img src="assets/images/feature-platter.jpg" alt="Loaded platter with vegetables and sauces" loading="lazy" />
+          <div>
+            <h3>Smoky Harvest Platter</h3>
+            <p>Roasted vegetables, citrus glaze, and herb crunch in 30 minutes.</p>
+          </div>
+        </article>
+        <article class="recipe-card">
+          <img src="assets/images/recipe-salad.jpg" alt="Colorful fresh salad" loading="lazy" />
+          <div>
+            <h3>Sunshine Garden Salad</h3>
+            <p>Leafy greens, toasted seeds, and orange vinaigrette for light lunches.</p>
+          </div>
+        </article>
+        <article class="recipe-card">
+          <img src="assets/images/recipe-modern.jpg" alt="Modern styled dish" loading="lazy" />
+          <div>
+            <h3>Chef's Black Plate Bowl</h3>
+            <p>Premium proteins, bright vegetables, and pepper-lime dressing.</p>
+          </div>
+        </article>
+        <article class="recipe-card">
+          <img src="assets/images/recipe-bowl.jpg" alt="Healthy bowl with ingredients" loading="lazy" />
+          <div>
+            <h3>Power Grain Bowl</h3>
+            <p>Whole grains, seasonal produce, and creamy tahini drizzle.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split reveal">
+      <div>
+        <p class="eyebrow">Weekly Plan</p>
+        <h2>Five-day menu crafted for balanced eating.</h2>
+        <ul class="feature-list">
+          <li>Monday: Orange-glazed tofu bowls with black sesame.</li>
+          <li>Tuesday: Garlic herb chicken with roasted roots.</li>
+          <li>Wednesday: Creamy mushroom pasta with spinach.</li>
+          <li>Thursday: Crispy fish tacos with mango slaw.</li>
+          <li>Friday: Slow-cooked tomato bean stew and grilled bread.</li>
+        </ul>
+      </div>
+      <img src="assets/images/recipe-fruit.jpg" alt="Fresh produce and prepared ingredients" loading="lazy" />
+    </section>
+
+    <section class="section testimonials reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Community Love</p>
+        <h2>What readers say about Yum Yum.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <article>
+          <p>"Every recipe feels realistic for my schedule, and the flavor hits every time."</p>
+          <span>- Nina, Austin</span>
+        </article>
+        <article>
+          <p>"The weekly plan helped me reduce takeout and still eat restaurant-quality food."</p>
+          <span>- Marco, Seattle</span>
+        </article>
+        <article>
+          <p>"Clear instructions, smart ingredient swaps, and gorgeous presentation ideas."</p>
+          <span>- Alia, Chicago</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta reveal">
+      <h2>Ready to cook smarter this week?</h2>
+      <p>Sign up to receive weekly menus, seasonal recipe packs, and kitchen shortcuts.</p>
+      <button class="signup-btn" type="button">Join Yum Yum</button>
+    </section>
+  </main>
+
+  <!-- Bottom subscription notice -->
+  <div class="notification-strip reveal" role="status" aria-live="polite">
+    <img src="assets/images/recipe-fruit.jpg" alt="Dish preview" loading="lazy" />
+    <p>Get weekly chef picks and recipes. Join the Yum Yum newsletter today.</p>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 Yum Yum. Built with HTML5, CSS3 and vanilla JavaScript.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var body = document.body;
+      var menuToggle = document.querySelector('.menu-toggle');
+      var mobileMenu = document.getElementById('mobile-menu');
+      var overlay = document.querySelector('.mobile-menu-overlay');
+      var menuLinks = mobileMenu.querySelectorAll('a');
+
+      // Mobile drawer controls.
+      function closeMenu() {
+        mobileMenu.classList.remove('is-open');
+        overlay.hidden = true;
+        body.classList.remove('menu-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      }
+
+      function openMenu() {
+        mobileMenu.classList.add('is-open');
+        overlay.hidden = false;
+        body.classList.add('menu-open');
+        menuToggle.setAttribute('aria-expanded', 'true');
+        mobileMenu.setAttribute('aria-hidden', 'false');
+      }
+
+      menuToggle.addEventListener('click', function () {
+        if (mobileMenu.classList.contains('is-open')) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      overlay.addEventListener('click', closeMenu);
+
+      for (var i = 0; i < menuLinks.length; i += 1) {
+        menuLinks[i].addEventListener('click', closeMenu);
+      }
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+          closeMenu();
+        }
+      });
+
+      // Lightweight scroll-in reveal animation.
+      var revealItems = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(
+          function (entries, io) {
+            for (var j = 0; j < entries.length; j += 1) {
+              if (entries[j].isIntersecting) {
+                entries[j].target.classList.add('is-visible');
+                io.unobserve(entries[j].target);
+              }
+            }
+          },
+          { threshold: 0.12 }
+        );
+
+        for (var k = 0; k < revealItems.length; k += 1) {
+          observer.observe(revealItems[k]);
+        }
+      } else {
+        for (var n = 0; n < revealItems.length; n += 1) {
+          revealItems[n].classList.add('is-visible');
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
